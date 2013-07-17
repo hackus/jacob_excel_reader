@@ -15,9 +15,16 @@
   </properties>
 
   <dependencies>
+	<dependency>
+	    <groupId>com.jacob</groupId>
+	    <artifactId>jacob</artifactId>
+	    <version>1.17-M2</version>
+	    <scope>system</scope>
+	    <systemPath>${project.basedir}/lib/jacob.jar</systemPath>
+	</dependency>
     <dependency>
       <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
+      <artifactId>junit</artifactId>      
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
@@ -50,7 +57,13 @@
     	<groupId>xom</groupId>
     	<artifactId>xom</artifactId>
     	<version>1.2.5</version>
+    </dependency>   
+<!--     <dependency>
+    	<groupId>net.sf.jacob-project</groupId>
+    	<artifactId>jacob</artifactId>
+    	<version>1.14.3</version>
     </dependency>
+-->
   </dependencies>
   <description>This project exemplifies how to use jacob for reading Pivot Tables from Excel.</description>
 </project>
